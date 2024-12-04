@@ -11,25 +11,25 @@ digito_final_numero_informado = int(numero_informado[-1])
 
 
 if digito_final_numero_informado == 0:
-    print(f'Número {numero_informado} é impar!\n')
+    print(f'Número {numero_informado} é par!\n')
 elif digito_final_numero_informado == 2:
-    print(f'Número {numero_informado} é impar!\n')
+    print(f'Número {numero_informado} é par!\n')
 elif digito_final_numero_informado == 4:
-    print(f'Número {numero_informado} é impar!\n')
+    print(f'Número {numero_informado} é par!\n')
 elif digito_final_numero_informado == 6:
-    print(f'Número {numero_informado} é impar!\n')
+    print(f'Número {numero_informado} é par!\n')
 elif digito_final_numero_informado == 8:
-    print(f'Número {numero_informado} é impar!\n')
+    print(f'Número {numero_informado} é par!\n')
 elif digito_final_numero_informado == 1:
-    print(f'Número {numero_informado} é par!\n')
+    print(f'Número {numero_informado} é impar!\n')
 elif digito_final_numero_informado == 3:
-    print(f'Número {numero_informado} é par!\n')
+    print(f'Número {numero_informado} é impar!\n')
 elif digito_final_numero_informado == 5:
-    print(f'Número {numero_informado} é par!\n')
+    print(f'Número {numero_informado} é impar!\n')
 elif digito_final_numero_informado == 7:
-    print(f'Número {numero_informado} é par!\n')
+    print(f'Número {numero_informado} é impar!\n')
 else:
-    print(f'Número {numero_informado} é par!\n')
+    print(f'Número {numero_informado} é impar!\n')
 
 
 #EXERCICIO RESOLVIDO PELO PROFESSOR

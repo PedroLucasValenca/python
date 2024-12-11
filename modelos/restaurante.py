@@ -1,15 +1,27 @@
 class Restaurante:
-    nome = ''
-    categoria = ''
-    ativo = False
 
-restaurante_praca = Restaurante()
-restaurante_praca.nome = 'Praças'
-restaurante_praca.categoria = 'Gourmet'
-restaurante_pizza = Restaurante()
+    restaurantes = []
+    '''construtor em python'''
+    def __init__(self, nome, categoria):
+        self.nome = nome
+        self.categoria = categoria
+        self.ativo = False
+        Restaurante.restaurantes.append(self)
 
+    '''metodo para retornar como desejo apresentar objeto'''
+    def __str__(self):
+        return f'{self.nome} | {self.categoria}'
 
-restaurante_praca.categoria = 'Italiana'
+    '''metodo criado dentro da propria classe'''
+    def listar_restaurante():
+        for restaurante in Restaurante.restaurantes:
+            print(f'{restaurante.nome} | {restaurante.categoria} | {restaurante.ativo}')
+
+restaurante_praca = Restaurante('Praça','Gourmet')
+restaurante_pizza = Restaurante('Pizza Express', 'Italiana')
+
+'''aula 1 exercicio'''
+""" restaurante_praca.categoria = 'Italiana'
 nome_do_restaurante = restaurante_praca.nome
 
 if restaurante_praca.ativo:
@@ -36,7 +48,6 @@ else:
 
 restaurante_pizza.ativo = True
 
-restaurantes = [ restaurante_praca, restaurante_pizza]
+restaurantes = [ restaurante_praca, restaurante_pizza] """
 
-print(f'Nome: {restaurante_praca.nome}, Categoria: {restaurante_praca.categoria}')
-print(vars(restaurante_praca))
+Restaurante.listar_restaurante()
